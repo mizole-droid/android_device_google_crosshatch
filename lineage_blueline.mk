@@ -13,6 +13,12 @@ $(call inherit-product, device/google/crosshatch/aosp_blueline.mk)
 
 include device/google/crosshatch/blueline/device-lineage.mk
 
+# Rom flags
+RICE_MAINTAINER := someone
+SUSHI_BOOTANIMATION  := 1440
+TARGET_ENABLE_BLUR := true
+TARGET_BUILD_GRAPHENEOS_CAMERA := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 3
